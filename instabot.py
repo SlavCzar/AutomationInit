@@ -38,7 +38,8 @@ class InstaBot:
         self.driver.find_element_by_xpath("//button[contains(text(), 'Not Now')]").click()
         time.sleep(3) # 3 Second Wait 
         search_box = self.driver.find_element_by_xpath('//input[@placeholder="Search"]')
-        self.driver.find_element_by_xpath('//a[@href="/seleniumbot666/"]').click()
+        #Add your username here
+        self.driver.find_element_by_xpath('//a[@href="/<username>/"]').click()
         time.sleep(3)
         prevFollowing = self.driver.find_element_by_xpath('//*[@id="react-root"]/section/main/div/header/section/ul/li[3]/a').text
         self.driver.find_element_by_xpath('//*[@id="react-root"]/section/main/div/header/section/ul/li[3]/a').click()
